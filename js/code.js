@@ -1,11 +1,11 @@
 
 function goToHome () {
-    window.location.href = "about.html";
+    window.location.href = "index.html";
 }
 
 
 function goToResume () {
-    window.location.href = "resume.html";
+    window.location.href = "timeline.html";
 }
 
 function goToContact () {
