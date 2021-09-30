@@ -1,0 +1,385 @@
+
+html, body {margin: 0; height: 100%; overflow-x:hidden;}
+
+.container {
+    display: flex;
+  }
+
+@font-face {
+    font-family: Clip;
+    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+  }
+  
+  body {
+    background-color: #141114;
+    background-image: linear-gradient(335deg, black 23px, transparent 23px),
+      linear-gradient(155deg, black 23px, transparent 23px),
+      linear-gradient(335deg, black 23px, transparent 23px),
+      linear-gradient(155deg, black 23px, transparent 23px);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+}
+
+html * {
+    font-family: 'Arial Narrow', sans-serif !important;
+}
+
+.sign {
+    letter-spacing: 2;
+    font-family: "Clip";
+    text-transform: uppercase;
+    font-size: 6em;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #52d141,
+        -0.2rem 0.1rem 1rem #52d141, 0.2rem 0.1rem 1rem #52d141,
+        0 -0.5rem 2rem #1d8b01, 0 0.5rem 3rem #1d8b01;
+    animation: shine 0s forwards, flicker 10s infinite;
+}
+
+@keyframes blink {
+    0%,22%,36%,
+    75% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #52d141,
+        -0.2rem 0.1rem 1rem #52d141, 0.2rem 0.1rem 1rem #52d141,
+        0 -0.5rem 2rem #1d8b01, 0 0.5rem 3rem #1d8b01;
+    }
+    28%,
+    33% {
+        color: #52d141;
+        text-shadow: none;
+    }
+    82%,
+    97% {
+        color: #1d8b01;
+        text-shadow: none;
+    }
+    }
+
+    .flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+    }
+
+    .fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+    }
+
+    @keyframes shine {
+    0% {
+        color: #197502;
+        text-shadow: none;
+    }
+    100% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #52d141,
+        -0.2rem 0.1rem 1rem #52d141, 0.2rem 0.1rem 1rem #52d141,
+        0 -0.5rem 2rem #1d8b01, 0 0.5rem 3rem #1d8b01;
+    }
+    }
+
+    @keyframes flicker {
+    from {
+        opacity: 1;
+    }
+
+    4% {
+        opacity: 0.9;
+    }
+
+    6% {
+        opacity: 0.85;
+    }
+
+    8% {
+        opacity: 0.95;
+    }
+
+    10% {
+        opacity: 0.9;
+    }
+
+    11% {
+        opacity: 0.922;
+    }
+
+    12% {
+        opacity: 0.9;
+    }
+
+    14% {
+        opacity: 0.95;
+    }
+
+    16% {
+        opacity: 0.98;
+    }
+
+    17% {
+        opacity: 0.9;
+    }
+
+    19% {
+        opacity: 0.93;
+    }
+
+    20% {
+        opacity: 0.99;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    26% {
+        opacity: 0.94;
+    }
+
+    28% {
+        opacity: 0.98;
+    }
+
+    37% {
+        opacity: 0.93;
+    }
+
+    38% {
+        opacity: 0.5;
+    }
+
+    39% {
+        opacity: 0.96;
+    }
+
+    42% {
+        opacity: 1;
+    }
+
+    44% {
+        opacity: 0.97;
+    }
+
+    46% {
+        opacity: 0.94;
+    }
+
+    56% {
+        opacity: 0.9;
+    }
+
+    58% {
+        opacity: 0.9;
+    }
+
+    60% {
+        opacity: 0.99;
+    }
+
+    68% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.9;
+    }
+
+    72% {
+        opacity: 0.95;
+    }
+
+    93% {
+        opacity: 0.93;
+    }
+
+    95% {
+        opacity: 0.95;
+    }
+
+    97% {
+        opacity: 0.93;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#title 
+{
+    margin: 40px;
+    font-size: 100px;
+    text-align: center;}
+#title2 
+{
+    margin: -60px;
+    font-size: 35px;
+    text-align: center;
+
+}
+
+.btn {
+    box-shadow: 0 0 10px 0 #1d8b01 inset, 0 0 10px 4px #1d8b01;
+    height: 58px;
+    width: 22%;
+    background-color: #141114;
+    background-image: linear-gradient(335deg, black 23px, transparent 23px),
+      linear-gradient(155deg, black 23px, transparent 23px),
+      linear-gradient(335deg, black 23px, transparent 23px),
+      linear-gradient(155deg, black 23px, transparent 23px);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+    border: 2px solid #52d141;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 85px 1%;
+    color: #70d662;
+    transition: all 150ms ease-in-out;
+    transform: translateX(6%);
+    text-shadow: 0 0 0.6rem #1d8b01, 0 0 1.5rem #1d8b01,
+        -0.2rem 0.1rem 1rem #1d8b01, 0.2rem 0.1rem 1rem #1d8b01,
+        0 -0.5rem 2rem #1d8b01, 0 0.5rem 3rem #1d8b01;
+}
+.btn:hover {
+    color: #fff;
+    box-shadow: 0 0 20px 0 #ffffff inset, 0 0 25px 4px #1d8b01;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ffe6ff,
+        -0.2rem 0.1rem 1rem #52d141, 0.2rem 0.1rem 1rem #52d141,
+        0 -0.5rem 2rem #1d8b01, 0 0.5rem 3rem #1d8b01;
+}
+
+.select {
+    border: 2px solid #ffffff;
+    color: #fff;
+    border-radius: 10px;
+}
+
+#gamediv {
+    text-align: center;
+    margin: 0px 15%;
+    width: 70%;
+}
+
+.gameFormat {
+    box-shadow: 0 0 0px 0 #ffffff inset, 0 0 25px 4px #1d8b01;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+    opacity: 80%;
+    border: 2px solid #1d8b01;
+    animation: fadeEffect 4s;
+}
+.gameFormat:hover {
+    border-radius: 50px;
+    opacity: 100%;
+}
+#colorref {
+    color: rgb(141, 248, 126);
+}
+#profile {
+    transform: translateY(100px);
+    text-align: center;
+    font-size: 20px;
+    color: #52d141;
+    border-radius: 50px;
+    text-shadow: 0 0 0.6rem #1d8b01, 0 0 1.5rem #1d8b01;
+    margin: -100px 25%;
+    animation: fadeEffect 4s;
+    width: 50%;
+}
+
+#contactInfo {
+    transform: translateY(100px);
+    text-align: center;
+    font-size: 30px;
+    color: #52d141;
+    border-radius: 50px;
+    text-shadow: 0 0 0.6rem #1d8b01, 0 0 1.5rem #1d8b01;
+    margin: -100px 25%;
+    animation: fadeEffect 2s;
+    width: 50%;
+}
+
+#projectsStyle {
+    transform: translateY(100px);
+    text-align: center;
+    font-size: 100px;
+    color: #52d141;
+    border-radius: 50px;
+    margin: -100px;
+    text-shadow: 0 0 0.6rem #1d8b01, 0 0 1.5rem #1d8b01;
+    animation: fadeEffect 2s;
+}
+#projectsStyle2 {
+    transform: translateY(100px);
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    border-radius: 50px;
+    text-shadow: 0 0 0.6rem #1d8b01, 0 0 1.5rem #1d8b01;
+    margin: 100px 25%;
+    animation: fadeEffect 4s;
+    width: 50%;
+}
+#moveupdescrib {
+    margin: -300px;
+}
+#photo {
+    animation: fadeEffect 1s;
+    box-shadow: 0 0 20px 0 #ffffff inset, 0 0 25px 4px #1d8b01;
+    border: 5px solid #1d8b01;
+    border-radius: 200px;
+    margin: 30px 50%;
+    transform: translateX(-150px);
+    width: 300px;
+    height: 300px;
+}
+
+#icon {
+    border-radius: 200px;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #52d141;
+    box-shadow: 0 0 20px 0 #ffffff inset, 0 0 25px 4px #1d8b01;
+}
+
+.iconHomePage {
+    animation: fadeEffect 6s;
+    transition: all 150ms ease-in-out;
+    border-radius: 200px;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #52d141;
+    box-shadow: 0 0 20px 0 #ffffff inset, 0 0 25px 4px #1d8b01;
+    cursor: pointer;
+}
+
+.iconHomePage:hover {
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 20px 0 #ffffff inset, 0 0 25px 4px #ffffff;
+}
+
+@keyframes fadeEffect { /* from 0 to full opacity */
+    from {opacity: 0;}
+    to {opacity: 1;}
+ }
+
+#groupProjectsStyle {
+    transform: translateY(100px);
+    text-align: center;
+    font-size: 20px;
+    color: #8af387;
+    border-radius: 50px;
+    text-shadow: 0 0 0.6rem #1d8b01, 0 0 1.5rem #1d8b01;
+    margin: -80px 25%;
+    animation: fadeEffect 4s;
+    width: 50%;
+}
+
+#gamescript {
+    text-align: center;
+    margin: 150px 0%;
+    width: 100%;
+    height: 70%;
+}

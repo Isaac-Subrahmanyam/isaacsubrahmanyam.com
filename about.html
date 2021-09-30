@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>About</title>
+	<script type="text/javascript" src="js/code.js"></script>
+    <link href="css/styles.css" rel="stylesheet">	
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script type="text/javascript" src="js/p5.js"></script> 
+</head>
+<body>
+
+	
+	<script type="text/javascript" src="js/electro.js"></script>
+    <div class="sign"><h1 id="title">ISAAC</h1></div>
+	<div class="sign"><h1 id="title2">SUBRAHMANYAM</h1></div>
+	
+	<button class="btn select">ABOUT</button>
+	<button class="btn" onclick="goToResume();">TIMELINE</button>
+	<button class="btn" onclick="goToProjects();">PROJECTS</button>
+	<button class="btn" onclick="goToContact();">CONTACT</button>
+
+	<img id = "photo" src = "https://scontent.ftpa1-2.fna.fbcdn.net/v/t1.6435-9/183178568_274790107662310_9145388120470256969_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=ARI16OFRSkAAX-qWTWu&_nc_ht=scontent.ftpa1-2.fna&oh=814f10c480e3644e449d40059444a260&oe=617B1DBB">
+	<h1 id="profile">My name is Isaac Subrahmanyam.<br>I started coding JavaScript applications as a young teen, and now, I am a senior student at UCF pursuing a BS in Computer Science.<br>
+		Throughout my career, I have maintained a 3.93 GPA. I have also learned many new skills!<br> 
+		I have experience coding in C, C++, Java, JavaScript, and Python. I also have experience with full-stack development.<br>
+		I am excited about the opportunities I will have to put these skills to use.<br><br>
+		This is my personal website (made by me) for employers to check out some of my work. Please, have a look around! 😀
+		<br><br><br>
+		</h1>
+		<br><br><br>
+		<br><br><br>
+		<br><br><br>
+		<br><br><br>
+		<div id="gamediv">
+
+		<a target="_blank" href="https://github.com/isaacsub9"><img class = "iconHomePage" src="https://th.bing.com/th/id/OIP.TTYI6itkQqyN0ViKIlzNmwHaHa?pid=ImgDet&rs=1"></a>
+		<a target="_blank" href="https://www.linkedin.com/in/isaac-subrahmanyam/"><img class = "iconHomePage" src="https://th.bing.com/th/id/OIP.SplKNLtzr4tWVZWmdcRo_gAAAA?pid=ImgDet&rs=1"></a>
+		<a target="_blank" href="https://www.facebook.com/isaac.subrahmanyam/"><img class = "iconHomePage" src="data:image/png;base64,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"></a>
+		</div>
+		<br><br><br><br>
+
+</body>
+</html>
