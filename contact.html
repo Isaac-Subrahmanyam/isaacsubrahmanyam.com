@@ -9,27 +9,29 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<script type="text/javascript" src="js/p5.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
 </head>
 <body>
 
-    <div class="sign"><h1 id="title">ISAAC</h1></div>
-	<div class="sign"><h1 id="title2">SUBRAHMANYAM</h1></div>
-	
+    <div id="addmargin">
 	<script type="text/javascript" src="js/electro.js"></script>
+	<div class="sign"><h1 id="title">ISAAC</h1></div>
+	<div class="sign"><h1 id="title2">SUBRAHMANYAM</h1></div>
+	</div>
 	<button class="btn" onclick="goToHome();">ABOUT</button>
 	<button class="btn" onclick="goToResume();">TIMELINE</button>
 	<button class="btn" onclick="goToProjects();">PROJECTS</button>
-	<button class="btn select">CONTACT</button>
+	<button class="btn select" onclick="goToContact();">CONTACT</button>
+	<br><br><br><br><br><br><br><br>
 
 	<h1 id="contactInfo">
 		<br><br>
-		<img id = "icon" src="images/phone.jpg">
-		<br>(407) 725-5513
+		<div id="wrapMargin2"><img id = "icon" src="images/phone.jpg">
+		<br>(407) 725-5513</div>
 		<br><br>
 		<br><br>
-		<img id = "icon" src="images/email.jpg">
-		<br>isaacsub9@gmail.com
+		<div id="wrapMargin2"><img id = "icon" src="images/email.jpg">
+		<br>isaacsub9@gmail.com</div>
 		<br><br><br>
 		</h1>
 	

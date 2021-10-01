@@ -8,20 +8,24 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="text/javascript" src="js/p5.js"></script>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
 </head>
 <body>
 
-    <div class="sign"><h1 id="title">ISAAC</h1></div>
-	<div class="sign"><h1 id="title2">SUBRAHMANYAM</h1></div>
-	
+    <div id="addmargin">
 	<script type="text/javascript" src="js/electro.js"></script>
+	<div class="sign"><h1 id="title">ISAAC</h1></div>
+	<div class="sign"><h1 id="title2">SUBRAHMANYAM</h1></div>
+	</div>
 	<button class="btn" onclick="goToHome();">ABOUT</button>
 	<button class="btn" onclick="goToResume();">TIMELINE</button>
-	<button class="btn select">PROJECTS</button>
+	<button class="btn select" onclick="goToProjects();">PROJECTS</button>
 	<button class="btn" onclick="goToContact();">CONTACT</button>
-	<h1 id="projectsStyle">GAMES</h1>
-	<h1 id="projectsStyle2">- CODED IN JAVASCRIPT<br>- USING KHAN ACADEMY'S OPEN SOURCE REPOSITORY<br>- I AM KNOWN AS ISAAC EMERALD<br>- THESE ARE ONLY SOME OF MY JS GAMES. PLAY MORE <a id="colorref" href="https://www.khanacademy.org/profile/IsaacEmerald/projects">HERE</a>!</h1>
+	<br><br><br><br><br><br><br><br>
+
+	<div id="wrapMargin2"><h1 id="projectsStyle">GAMES</h1><br>
+	<h1 id="projectsStyle3">- CODED IN JAVASCRIPT<br><br>- USING KHAN ACADEMY'S OPEN SOURCE REPOSITORY<br><br>- I AM KNOWN AS ISAAC EMERALD<br><br>- THESE ARE ONLY SOME OF MY JS GAMES. PLAY MORE <a id="colorref" href="https://www.khanacademy.org/profile/IsaacEmerald/projects">HERE</a>!</h1></div>
 	<br><br><br><br>
 	
 	<div id="gamediv">
@@ -42,23 +46,25 @@
 	</div>
 
 	<br><br><br><br>
+	<br><br><br><br>
 
-	<h1 id="projectsStyle">GROUP PROJECTS</h1>
-	<h1 id="projectsStyle2">- FULL STACK APPLICATIONS<br>- USED GITHUB AND DISCORD FOR COLLABORATION<br>- I WAS MAINLY FRONT END</h1>
+	<div id="wrapMargin2"><h1 id="projectsStyle">GROUP PROJECTS</h1><br>
+	<h1 id="projectsStyle3">- FULL STACK APPLICATIONS<br><br>- USED GITHUB AND DISCORD FOR COLLABORATION<br><br>- I WAS MAINLY FRONT END</h1></div>
 
 	<br><br><br><br>
 	<div id="gamediv">
-
 		<a id="colorref" target="_blank" href="http://connectere.online/index.html"><img class="gameFormat" src="images/connectere.jpg"></a>
-		<h1 id="groupProjectsStyle">
-			- Connectere is a contact manager I made with a group of classmates<br>
-			- It was made to test our full-stack abilities<br>
-			- We used a LAMP stack for this particular project<br>
-			- It implements 8 API's. 4 for the User and 4 for the Contacts.<br>
-			- We also implemented a hashing password system for extra security.<br>
+	</div>
+	<br><br><br><br>
+	<div id="wrapMargin3"><h1 id="groupProjectsStyle">
+			- Connectere is a contact manager I made with a group of classmates<br><br>
+			- It was made to test our full-stack abilities<br><br>
+			- We used a LAMP stack for this particular project<br><br>
+			- It implements 8 API's. 4 for the User and 4 for the Contacts.<br><br>
+			- We also implemented a hashing password system for extra security.<br><br>
 			- Sign up today and manage your contacts!
-
 		</h1>
+	</div>
 		
 		<br><br><br><br>
 		<br><br><br><br>
@@ -67,7 +73,6 @@
 <!-- 		
 		<img class="gameFormat" src=""> -->
 
-	</div>
 	<br><br><br><br>
 </body>
 </html>
