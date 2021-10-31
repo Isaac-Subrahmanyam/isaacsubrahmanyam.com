@@ -217,6 +217,13 @@ html * {
 
 }
 
+#headerMargin
+{
+    text-align: center;
+    margin: 0px 0%;
+    width: 100%;
+}
+
 .btn {
     box-shadow: 0 0 10px 0 #1d8b01 inset, 0 0 10px 4px #1d8b01;
     height: 58px;
@@ -234,7 +241,6 @@ html * {
     margin: 10px 1%;
     color: #70d662;
     transition: all 150ms ease-in-out;
-    transform: translateX(6%);
     text-shadow: 0 0 0.6rem #1d8b01, 0 0 1.5rem #1d8b01,
         -0.2rem 0.1rem 1rem #1d8b01, 0.2rem 0.1rem 1rem #1d8b01,
         0 -0.5rem 2rem #1d8b01, 0 0.5rem 3rem #1d8b01;
@@ -536,5 +542,5 @@ html * {
     border: 1px solid #52d141;
     box-shadow: 0 0 20px 0 #ffffff inset, 0 0 25px 4px #1d8b01;
     padding: 100px 0px;
-    margin: 0px 20%;
+    margin: 0px 18%;
 }
